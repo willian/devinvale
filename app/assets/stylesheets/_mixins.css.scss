@@ -1,0 +1,14 @@
+@mixin rounded_corners ($radius: 5px) {
+	-moz-border-radius:$radius;
+	-webkit-border-radius:$radius;
+	border-radius:$radius;
+}
+
+@mixin image-replacement {
+	overflow:hidden;
+	text-indent:-99999em;
+}
+
+@mixin clearfix {
+	clear:both;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale.to_s.downcase %>">
+	<head>
+		<meta charset="UTF-8">
+		<title><%= "#{page_title} • Devinvale" %></title>
+		<%= stylesheet_link_tag "application" %>
+		<%= dispatcher_tag %>
+		<%= csrf_meta_tag %>
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<%= body do %>
+		<%= page do %>
+			<%= header :class => "clearfix" do %>
+				<h1>Devinvale</h1>
+			<% end %>
+
+			<%= flash_messages %>
+
+			<%= main :class => "clearfix" do %>
+				<%= yield %>
+			<% end %>
+
+			<%= footer do %>
+				<p class="copyright">Copyright © 2011 Devinvale.</p>
+			<% end %>
+		<% end %>
+
+		<%= javascript_include_tag "application" %>
+	<% end %>
+</html>
