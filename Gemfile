@@ -2,6 +2,7 @@ source "http://rubygems.org"
 
 gem "rails", "3.1.0"
 
+gem "mysql2"
 gem "jquery-rails"
 
 # Use unicorn as the web server
@@ -11,9 +12,7 @@ gem "unicorn"
 gem "capistrano"
 
 gem "airbrake"
-gem "bson_ext"
 gem "i18n-js"
-gem "mongoid"
 gem "permalink"
 gem "simple_form"
 gem "sorcery"
