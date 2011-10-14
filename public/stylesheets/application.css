@@ -67,6 +67,13 @@ a img {
 	border:none;
 }
 
+a.fork-me img {
+	border:none;
+	position:absolute;
+	right:0;
+	top:0;
+}
+
 #page {
 	margin:0 auto;
 	width:900px;
