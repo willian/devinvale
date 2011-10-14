@@ -6,7 +6,7 @@ gem "mysql2"
 gem "jquery-rails"
 
 # Use unicorn as the web server
-gem "unicorn"
+# gem "unicorn"
 
 # Deploy with Capistrano
 gem "capistrano"
@@ -15,7 +15,6 @@ gem "airbrake"
 gem "i18n-js"
 gem "permalink"
 gem "simple_form"
-gem "sorcery"
 gem "swiss_knife"
 gem "validators", git: "git://github.com/willian/validators.git", branch: "master"
 

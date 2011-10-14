@@ -21,8 +21,13 @@ describe User do
         user.should_not be_valid
       end
 
-      it "should be invalid without a password" do
-        user = Factory.build(:user, password: nil, password_confirmation: nil)
+      it "should be invalid without a city name" do
+        user = Factory.build(:user, city_name: nil)
+        user.should_not be_valid
+      end
+
+      it "should be invalid without a state name" do
+        user = Factory.build(:user, state_name: nil)
         user.should_not be_valid
       end
 
@@ -48,16 +53,6 @@ describe User do
 
       it "should be invalid with a wrong email" do
         user = Factory.build(:user, email: "test@@gmail.com")
-        user.should_not be_valid
-      end
-
-      it "should be invalid when password is too small" do
-        user = Factory.build(:user, password: "123")
-        user.should_not be_valid
-      end
-
-      it "should be invalid when password and confirmation doesn't match" do
-        user = Factory.build(:user, password: "1234", password_confirmation: "1235")
         user.should_not be_valid
       end
     end

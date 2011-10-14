@@ -1,6 +1,7 @@
 javascripts:
   base:
     - jquery
+    - jquery.maskedinput
     - rails
     - i18n
     - dispatcher
