@@ -1,0 +1,22 @@
+"pt-BR":
+  flash_messages:
+    users:
+      create:
+        notice: "Sua inscrição foi feita com sucesso!"
+  links:
+    home: "Início"
+    organization: "Organização"
+    register: "Inscrição"
+    schedule: "Programação"
+    speakers: "Palestrantes"
+    sponsors: "Patrocínadores"
+    venue: "Local"
+  texts:
+    greeting: "DevInVale, 05 nov 2011 (sábado)"
+  titles:
+    home:
+      index: "Início"
+    speakers:
+      index: "Palestrantes"
+    users:
+      new: "Inscrição"

@@ -2,33 +2,57 @@
 <html lang="<%= I18n.locale.to_s.downcase %>">
 	<head>
 		<meta charset="UTF-8">
-		<title><%= "#{page_title} • Devinvale" %></title>
-		<%= stylesheet_link_tag "application" %>
+		<title><%= "#{page_title} • DevInVale" %></title>
+		<%= stylesheet_includes :base %>
 		<%= dispatcher_tag %>
 		<%= csrf_meta_tag %>
 
 		<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
 
 	<%= body do %>
 		<%= page do %>
-			<%= header :class => "clearfix" do %>
-				<h1>Devinvale</h1>
+			<%= header :class => "group" do %>
+				<%= link_to root_path do %>
+					<%= image_tag "logo.png" %>
+				<% end %>
+				<p>
+					<strong>05 nov 2011</strong>
+					<small>ITA, São José dos Campos/SP</small>
+				</p>
+				<nav id="menu">
+					<%= link_to t("links.home"), root_path, class: "home" %>
+					<%= link_to t("links.register"), new_user_path, class: "register" %>
+					<%= link_to t("links.venue"), "#", class: "venue disabled" %>
+					<%= link_to t("links.speakers"), "#", class: "speakers disabled" %>
+					<%= link_to t("links.schedule"), "#", class: "schedule disabled" %>
+					<%= link_to t("links.sponsors"), "#", class: "sponsors disabled" %>
+					<%= link_to t("links.organization"), "#", class: "organization disabled" %>
+				</nav>
 			<% end %>
+
+			<div id="greeting">
+				<p><%= t("texts.greeting") %></p>
+			</div>
 
 			<%= flash_messages %>
 
-			<%= main :class => "clearfix" do %>
+			<%= main :class => "group" do %>
 				<%= yield %>
-			<% end %>
-
-			<%= footer do %>
-				<p class="copyright">Copyright © 2011 Devinvale.</p>
 			<% end %>
 		<% end %>
 
-		<%= javascript_include_tag "application" %>
+		<%= footer do %>
+			<p class="copyright">
+				<strong>DevInVale 2011</strong>
+				<%= mail_to "contato@devinvale.com.br", "contato@devinvale.com.br" %>
+				|
+				<%= link_to "@devinvale", "http://twitter.com/#!/devinvale" %>
+			</p>
+		<% end %>
+
+		<%= javascript_includes :base %>
 	<% end %>
 </html>

@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>Username:</b>
+  <%= @user.username %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Crypted password:</b>
+  <%= @user.crypted_password %>
+</p>
+
+<p>
+  <b>Salt:</b>
+  <%= @user.salt %>
+</p>
+
+<p>
+  <b>Remember me token:</b>
+  <%= @user.remember_me_token %>
+</p>
+
+<p>
+  <b>Remember me token expires at:</b>
+  <%= @user.remember_me_token_expires_at %>
+</p>
+
+<p>
+  <b>Reset password token:</b>
+  <%= @user.reset_password_token %>
+</p>
+
+<p>
+  <b>Reset password token expires at:</b>
+  <%= @user.reset_password_token_expires_at %>
+</p>
+
+<p>
+  <b>Reset password email sent at:</b>
+  <%= @user.reset_password_email_sent_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

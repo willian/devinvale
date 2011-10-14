@@ -1,0 +1,23 @@
+<h1><%= t("titles.users.new") %></h1>
+
+<%= simple_form_for(@user) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :name %>
+    <%= f.input :email %>
+    <%= f.input :password %>
+    <%= f.input :password_confirmation %>
+    <%= f.input :twitter %>
+    <%= f.input :cpf %>
+    <%= f.input :company %>
+    <%= f.input :college %>
+    <%= f.input :foreigner, as: :select %>
+    <%= f.input :ita_student, as: :select %>
+    <%= f.input :ita_badge, as: :select %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

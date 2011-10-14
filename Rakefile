@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Devinvale::Application.load_tasks
+DevInVale::Application.load_tasks

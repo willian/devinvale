@@ -1,0 +1,12 @@
+javascripts:
+  base:
+    - jquery
+    - rails
+    - i18n
+    - dispatcher
+    - application
+stylesheets:
+  base:
+    - normalize
+    - simple_form
+    - application

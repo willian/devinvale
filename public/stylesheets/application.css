@@ -1,0 +1,179 @@
+/* Defaults */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small,  strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border:0;
+	font-size:100%;
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+}
+ul, ol { list-style:none }
+section, article, aside, header, footer, nav, dialog, figure { display:block; }
+
+a { outline:none; }
+
+.group:after {
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+}
+
+.ie .group {
+	display:block;
+	zoom:1;
+}
+
+.inline { display:inline !important; }
+.hidden { display:none; }
+
+.image-replacement {
+	display:inline-block;
+	overflow:hidden;
+	text-indent:-99999em;
+}
+.inverse-image-replacement {
+	display:inline-block;
+	overflow:hidden;
+	text-indent:99999em;
+}
+
+/**
+* Primary styles
+*/
+body {
+	background-image:url('/images/bg.png');
+	color:#222;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	font-size:16px;
+}
+
+body.ie { font-size:13px; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-rendering:optimizeLegibility;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display:block;
+}
+
+a, a:visited {
+	color:#595959;
+}
+
+a img {
+	border:none;
+}
+
+#page {
+	margin:0 auto;
+	width:900px;
+}
+
+/**
+* Layout
+*/
+header {
+	padding:40px 0;
+	position:relative;
+}
+header a {
+	float:left;
+}
+
+header p {
+	float:right;
+	text-transform:uppercase;
+}
+header p strong {
+	font-size:36px;
+	display:block;
+}
+
+header nav#menu {
+	bottom:40px;
+	position:absolute;
+	right:0;
+}
+header nav#menu a {
+	color:#025964;
+	margin-left:15px;
+	font-size:18px;
+	text-decoration:none;
+	text-transform:lowercase;
+}
+
+header nav#menu a:hover { border-bottom:5px solid #000; }
+
+body#home-page header nav#menu a.home,
+body#users-page header nav#menu a.register {
+	border-bottom:5px solid #CF004E;
+}
+
+header nav#menu a.disabled { color:#CCC; }
+header nav#menu a.disabled:hover {
+	border:none;
+	cursor:default;
+}
+
+div#greeting {
+	background-image:url('/images/last_year.jpg');
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+	height:276px;
+	margin-bottom:5px;
+	position:relative;
+}
+
+div#greeting p {
+	background-color:#000;
+	bottom:20px;
+	color:#FFF;
+	font-size:24px;
+	height:60px;
+	line-height:60px;
+	opacity:0.7;
+	padding:0 10px;
+	position:absolute;
+	width:400px;
+}
+
+#main {
+	margin:50px 0;
+}
+
+#main h1 {
+	background-image:url('/images/title_bg.png');
+	color:#FFF;
+	font-size:18px;
+	font-weight:normal;
+	height:58px;
+	line-height:62px;
+	margin-bottom:20px;
+	padding-left:20px;
+	text-transform:uppercase;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+	width:226px;
+	filter: dropshadow(color=#000, offx=1, offy=1);
+}
+
+#main .simple_form .inputs .input {
+	float:left;
+	padding:5px;
+}
+#main .simple_form .inputs .input input { width:420px; }
+#main .simple_form .inputs .input select { width:286px; }
+
+footer {
+	background-color:#222;
+	color:#FFF;
+	padding:10px 0 30px 0;
+}
+footer p {
+	text-align:center;
+}
+footer p strong { display:block; }
+footer p a { color:#FFF; }

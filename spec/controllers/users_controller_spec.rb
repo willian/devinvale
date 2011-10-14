@@ -1,0 +1,2 @@
+describe UsersController do
+end

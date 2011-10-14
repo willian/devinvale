@@ -2,7 +2,7 @@
 # The default is nothing which will include only core features (password encryption, login/logout).
 # Available submodules are: :user_activation, :http_basic_auth, :remember_me,
 # :reset_password, :session_timeout, :brute_force_protection, :activity_logging, :external
-Rails.application.config.sorcery.submodules = []
+Rails.application.config.sorcery.submodules = [:remember_me, :reset_password]
 
 # Here you can configure each submodule's features.
 Rails.application.config.sorcery.configure do |config|
@@ -26,12 +26,12 @@ Rails.application.config.sorcery.configure do |config|
   # -- http_basic_auth --
   # config.controller_to_realm_map = {"application" => "Application"} # What realm to display for which controller name.
                                                                       # For example {"My App" => "Application"}
-  
+
   # -- activity logging --
   # config.register_login_time = true                                 # will register the time of last user login, every login.
   # config.register_logout_time = true                                # will register the time of last user logout, every logout.
   # config.register_last_activity_time = true                         # will register the time of last user action, every action.
-                                                                                                                                          
+
   # -- external --
   # config.external_providers = []                                    # What providers are supported by this app,
                                                                       # i.e. [:twitter, :facebook, :github] .
@@ -55,12 +55,12 @@ Rails.application.config.sorcery.configure do |config|
   # config.github.user_info_mapping = {:email => "name"}
 
   # config.sinatra_cookie_secret = 'ch4ng3M3plz'                      # key used to sign cookies in Sinatra
-                                                                      # changing it will invalidate all signed cookies!        
+                                                                      # changing it will invalidate all signed cookies!
 
   # --- user config ---
   config.user_config do |user|
     # -- core --
-    # user.username_attribute_names = [:username]                                     # specify username
+    user.username_attribute_names = [:username, :email]                               # specify username
                                                                                       # attributes, for example:
                                                                                       # [:username, :email].
 
@@ -88,7 +88,7 @@ Rails.application.config.sorcery.configure do |config|
                                                                                       #
                                                                                       # WARNING:
                                                                                       #
-                                                                                      # If used for users' passwords, changing this key 
+                                                                                      # If used for users' passwords, changing this key
                                                                                       # will leave passwords undecryptable!
 
     # user.custom_encryption_provider = nil                                           # use an external encryption
@@ -140,7 +140,7 @@ Rails.application.config.sorcery.configure do |config|
                                                                                                 # used for hammering
                                                                                                 # protection.
 
-    # user.reset_password_mailer = nil                                                          # mailer class. Needed.
+    user.reset_password_mailer = UserMailer                                                     # mailer class. Needed.
 
     # user.reset_password_email_method_name = :reset_password_email                             # reset password email
                                                                                                 # method on your mailer
