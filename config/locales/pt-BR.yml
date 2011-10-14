@@ -1,4 +1,9 @@
 "pt-BR":
+  activerecord:
+    errors:
+      messages:
+        invalid_cpf: "Número do CPF inválido"
+        invalid_email: "Endereço de e-mail inválido"
   flash_messages:
     users:
       create:
