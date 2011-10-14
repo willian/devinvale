@@ -25,3 +25,6 @@
       index: "Palestrantes"
     users:
       new: "Inscrição"
+  user_mailer:
+    confirmation:
+      subject: "[DevInVale] Confirmação de inscrição"
