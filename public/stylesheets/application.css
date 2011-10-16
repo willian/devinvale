@@ -114,8 +114,13 @@ header nav#menu a {
 
 header nav#menu a:hover { border-bottom:5px solid #000; }
 
-body#home-page header nav#menu a.home,
-body#users-page header nav#menu a.register {
+body.home-index header nav#menu a.home,
+body.users-new header nav#menu a.register,
+body.home-venue header nav#menu a.venue,
+body.home-speakers header nav#menu a.speakers,
+body.home-schedule header nav#menu a.schedule,
+body.home-sponsors header nav#menu a.sponsors,
+body.home-organization header nav#menu a.organization {
 	border-bottom:5px solid #CF004E;
 }
 
