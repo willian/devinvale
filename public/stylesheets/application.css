@@ -169,7 +169,7 @@ div#greeting p {
 
 #main .simple_form .inputs .input {
 	float:left;
-	padding:5px;
+	padding: 4px;
 }
 #main .simple_form .inputs .input input { width:420px; }
 #main .simple_form .inputs .input select { width:286px; }
@@ -184,3 +184,36 @@ footer p {
 }
 footer p strong { display:block; }
 footer p a { color:#FFF; }
+
+
+#venue{
+	
+}
+
+#venue div.map{
+	width: 430px;
+	margin: 0 30px 0 0;
+	float: left;
+}
+
+#venue div.address{
+	float: left;
+}
+
+#venue h2.title, #venue h3.auditorio{
+	width: 350px;
+	display: block;
+	text-indent: -9999px;
+}
+
+#venue h2.title{
+	height: 75px;
+	background: url('/images/venue/ita-title.png') no-repeat;
+}
+
+#venue h3.auditorio{
+	height: 18px;
+	background: url('/images/venue/title-auditorio.png') no-repeat;
+	margin: 0 0 30px 0;
+}
+

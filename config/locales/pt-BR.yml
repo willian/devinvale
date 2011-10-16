@@ -21,8 +21,11 @@
   titles:
     home:
       index: "Início"
+      venue: "Local"
     speakers:
       index: "Palestrantes"
+    venue:
+      index: "Local"
     users:
       new: "Inscrição"
   user_mailer:
