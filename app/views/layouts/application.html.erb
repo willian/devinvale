@@ -29,10 +29,10 @@
 					<%= link_to t("links.home"), root_path, class: "home" %>
 					<%= link_to t("links.register"), new_user_path, class: "register" %>
 					<%= link_to t("links.venue"), venue_path, class: "venue" %>
-					<%= link_to t("links.speakers"), "#", class: "speakers disabled" %>
-					<%= link_to t("links.schedule"), "#", class: "schedule disabled" %>
-					<%= link_to t("links.sponsors"), "#", class: "sponsors disabled" %>
-					<%= link_to t("links.organization"), "#", class: "organization disabled" %>
+					<%= link_to t("links.speakers"), speakers_path, class: "speakers" %>
+					<%= link_to t("links.schedule"), schedule_path, class: "schedule" %>
+					<%= link_to t("links.sponsors"), sponsors_path, class: "sponsors" %>
+					<%= link_to t("links.organization"), organization_path, class: "organization" %>
 				</nav>
 			<% end %>
 

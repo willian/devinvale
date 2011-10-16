@@ -22,10 +22,20 @@
     home:
       index: "Início"
       venue: "Local"
+      speakers: "Palestrantes"
+      schedule: "Programação"
+      sponsors: "Patrocínadores"
+      organization: "Organização"
     speakers:
       index: "Palestrantes"
+    schedule: 
+      index: "Programação"
+    sponsors: 
+      index: "Patrocínadores"
     venue:
       index: "Local"
+    organization: 
+      index: "Organização"
     users:
       new: "Inscrição"
   user_mailer:

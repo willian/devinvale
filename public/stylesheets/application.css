@@ -1,6 +1,6 @@
 /* Defaults */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small,  strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-	border:0;
+	border:0;	
 	font-size:100%;
 	margin:0;
 	padding:0;
@@ -185,11 +185,31 @@ footer p {
 footer p strong { display:block; }
 footer p a { color:#FFF; }
 
-
-#venue{
-	
+#sponsors div.diamond{
+	float: left;
 }
 
+#sponsors h2{
+	color: #595959;
+}
+
+#sponsors div.diamond{
+	margin: 0 30px 0 0;
+	height: 500px;
+}
+
+#sponsors div.platinum, #sponsors div.gold{
+	margin: 0  0 30px 0;
+}
+
+#sponsors img{
+	border: 1px solid #999;
+} 
+
+
+/*
+	Venue page
+*/
 #venue div.map{
 	width: 430px;
 	margin: 0 30px 0 0;
