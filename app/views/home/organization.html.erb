@@ -1,2 +1,57 @@
 <h1><%= t("titles.organization.index") %></h1>
-<p>Divulgaremos em breve.</p>
+
+<div id="organization">
+
+	<h2>Essa é a equipe que está preparando o DevInVale para você :)</h2>
+	
+	<div class="people">	
+		<div class="box">
+			<%= link_to "http://www.twitter.com/michelamaral" do %>
+				<%= image_tag "/images/organization/michel-amaral.jpg", :title => "Michel Amaral - Designa Soluções" %>
+			<% end %>
+			<ul>
+				<li class="name">Michel Amaral</li>
+				<li><%= link_to "@michelamaral", "http://www.twitter.com/michelamaral"%></li>
+				<li><%= link_to "Designa Soluções", "http://www.designa.com.br"%></li>
+				<li><%= link_to "http://www.github.com/michelamaral", "http://www.github.com/michelamaral"%></li>
+			</ul>
+		</div>
+
+		<div class="box">
+			<%= link_to "http://www.twitter.com/bsao" do %>
+				<%= image_tag "/images/organization/robson-junior.jpg", :title => "Robson Júnior - ITA" %>
+			<% end %>
+			<ul>
+				<li class="name">Robson Júnior</li>
+				<li><%= link_to "@bsao", "http://www.twitter.com/bsao"%></li>
+				<li><%= link_to "ITA", "http://www.ita.br"%></li>
+				<li><%= link_to "http://www.github.com/bsao", "http://www.github.com/bsao"%></li>
+			</ul>
+		</div>
+
+		<div class="box">
+			<%= link_to "http://www.twitter.com/willian" do %>
+				<%= image_tag "/images/organization/willian.jpg", :title => "Willian Fernandes" %>
+			<% end %>
+			<ul>
+				<li class="name">Willian Fernandes</li>
+				<li><%= link_to "@willian", "http://www.twitter.com/willian"%></li>
+				<li><%= link_to "http://www.github.com/wilian", "http://www.github.com/wilian"%></li>
+			</ul>
+		</div>
+	</div>
+	
+	<h2>Empresas e Instituições que organizam o DevInVale</h2>
+	<div class="companies">
+		<div class="box">
+			<%= link_to "http://www.ita.br" do %>
+				<%= image_tag "/images/organization/ita-brand.png", :title => "ITA - Instituto Tecnológico de Aeronáutica" %>
+			<% end %>
+		</div>
+		<div class="box">
+			<%= link_to "http://www.designa.com.br" do %>
+				<%= image_tag "/images/organization/designa-brand.png", :title => "Designa Soluções" %>
+			<% end %>
+		</div>
+	</div>
+</div>

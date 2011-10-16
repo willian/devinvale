@@ -42,7 +42,7 @@ a { outline:none; }
 * Primary styles
 */
 body {
-	background-image:url('/images/bg.png');
+	background: url('/images/bg.png') repeat-x;
 	color:#222;
 	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 	font-size:16px;
@@ -153,7 +153,7 @@ div#greeting p {
 }
 
 #main h1 {
-	background-image:url('/images/title_bg.png');
+	background: url('/images/title_bg.png');
 	color:#FFF;
 	font-size:18px;
 	font-weight:normal;
@@ -185,6 +185,9 @@ footer p {
 footer p strong { display:block; }
 footer p a { color:#FFF; }
 
+/*
+	Sponsors Page
+*/
 #sponsors div.diamond{
 	float: left;
 }
@@ -206,6 +209,33 @@ footer p a { color:#FFF; }
 	border: 1px solid #999;
 } 
 
+/*
+	Organization Page
+*/
+
+#organization img{
+	padding: 5px;
+	border: 1px solid #999;
+} 
+
+#organization h2{
+	padding: 20px 0;
+} 
+
+#organization div.people{
+	height: 300px;
+}
+
+#organization div.box{
+	float: left;
+	width: 250px;
+	height: 210px;
+}
+
+#organization div.companies div.box{
+	float: left;
+	margin: 0 15px 0 0 ;
+}
 
 /*
 	Venue page
