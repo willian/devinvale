@@ -14,7 +14,7 @@
     register: "Inscrição"
     schedule: "Programação"
     speakers: "Palestrantes"
-    sponsors: "Patrocínadores"
+    sponsors: "Patrocinadores"
     venue: "Local"
   texts:
     greeting: "DevInVale, 05 nov 2011 (sábado)"
@@ -24,14 +24,14 @@
       venue: "Local"
       speakers: "Palestrantes"
       schedule: "Programação"
-      sponsors: "Patrocínadores"
+      sponsors: "Patrocinadores"
       organization: "Organização"
     speakers:
       index: "Palestrantes"
     schedule: 
       index: "Programação"
     sponsors: 
-      index: "Patrocínadores"
+      index: "Patrocinadores"
     venue:
       index: "Local"
     organization: 
