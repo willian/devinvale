@@ -218,7 +218,7 @@ footer p a { color:#FFF; }
 	Organization Page
 */
 
-#organization img{
+#organization img, #speakers img{
 	padding: 5px;
 	border: 1px solid #999;
 } 
@@ -241,6 +241,25 @@ footer p a { color:#FFF; }
 	float: left;
 	margin: 0 15px 0 0 ;
 }
+
+
+/*
+	Spearkers Page
+*/
+
+#speakers img{
+	margin: 0 15px 15px 0;
+	float: left;
+}
+
+#speakers div.box{
+	border: 1px solid #666;
+	border-width: 0 0 1px 0;
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+}
+
+
 
 /*
 	Schedule page
