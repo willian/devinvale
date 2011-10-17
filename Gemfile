@@ -10,7 +10,9 @@ gem "jquery-rails"
 
 # Deploy with Capistrano
 gem "capistrano"
+
 gem "airbrake"
+gem "delayed_job"
 gem "i18n-js"
 gem "permalink"
 gem "simple_form"
