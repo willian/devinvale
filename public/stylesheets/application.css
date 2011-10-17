@@ -243,6 +243,17 @@ footer p a { color:#FFF; }
 }
 
 /*
+	Schedule page
+*/
+
+#schedule td, #schedule th{
+	padding: 10px;
+	border: 1px solid #999;
+	border-width: 0 0 1px 0;
+	text-align: center;
+}
+
+/*
 	Venue page
 */
 #venue div.map{
