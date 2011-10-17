@@ -17,8 +17,6 @@ gem "simple_form"
 gem "swiss_knife"
 gem "validators", git: "git://github.com/willian/validators.git", branch: "master"
 
-gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
-
 group :test do
   gem "capybara"
   gem "factory_girl"
