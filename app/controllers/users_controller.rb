@@ -5,7 +5,6 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:user])
-
     if @user.save
       UserMailer.confirmation(@user).deliver
       redirect_to root_path, notice: t("flash_messages.users.create.notice")
