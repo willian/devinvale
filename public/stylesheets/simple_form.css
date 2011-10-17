@@ -38,6 +38,11 @@
   color: red;
   font-size: 75%;
 }
+
+.simple_form .inputs .hint{
+	color: black;
+}
+
 .simple_form .actions {
   float: left;
   margin: 20px 0 10px;
