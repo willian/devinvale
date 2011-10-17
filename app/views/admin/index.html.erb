@@ -1,0 +1,36 @@
+<h1>Inscritos</h1>
+<div id="attends">
+<% if !@users.blank? %>
+	<table>
+	  <tr>
+	    <th style="width: 150px;">Nome</th>
+	    <th style="width: 150px;">Email</th>
+	    <th>Twitter</th>
+	    <th>CPF</th>
+	    <th>Empresa</th>
+	    <th>Faculdade</th>
+	    <th>ITA?</th>
+	    <th>Crachá?</th>
+	    <th></th>
+	    <th></th>
+	    <th></th>
+	  </tr>
+
+	<% @users.each do |user| %>
+	  <tr>
+	    <td><%= user.name %></td>
+	    <td><%= user.email %></td>
+	    <td><%= user.twitter %></td>
+	    <td><%= user.cpf %></td>
+	    <td><%= user.company %></td>
+	    <td><%= user.college %></td>
+	    <td><%= user.ita_student ? "Sim" : "Não" %></td>
+	    <td><%= user.ita_badge ? "Sim" : "Não" %></td>
+	    <td><%= link_to "Excluir", :controller => "admin", :action => "remove_user", :id => user.id %></td>
+	  </tr>
+	<% end %>
+	</table>
+<% else %>
+	<p>Ninguem se registrou ainda :( </p>
+<% end %>
+</div>

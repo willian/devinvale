@@ -6,4 +6,8 @@ DevInVale::Application.routes.draw do
   match '/sponsors' => 'home#sponsors'
   match '/organization' => 'home#organization'
   resources :users
+  
+  # is it possible improve this?
+  resources :admin, :only => [:index]
+  match '/admin/remove-user/:id' => 'admin#remove_user'
 end

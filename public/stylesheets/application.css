@@ -246,11 +246,20 @@ footer p a { color:#FFF; }
 	Schedule page
 */
 
-#schedule td, #schedule th{
+.group td, .group th{
 	padding: 10px;
 	border: 1px solid #999;
 	border-width: 0 0 1px 0;
 	text-align: center;
+}
+
+#attends th{
+	background: #666;
+}
+
+#attends td, #attends th{
+	font-size: 10px;
+	text-align: left;
 }
 
 /*

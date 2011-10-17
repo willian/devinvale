@@ -2,20 +2,16 @@
 <html lang="<%= I18n.locale.to_s.downcase %>">
 	<head>
 		<meta charset="UTF-8">
-		<title><%= "#{page_title} • DevInVale 2011" %></title>
+		<title><%= "Administrador • DevInVale 2011" %></title>
 		<%= stylesheet_includes :base %>
 		<%= dispatcher_tag %>
 		<%= csrf_meta_tag %>
-
 		<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
 
 	<%= body do %>
-		<%= link_to "http://github.com/willian/devinvale", class: "fork-me" do %>
-			<%= image_tag "https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67", alt: "Fork me on GitHub" %>
-		<% end %>
 		<%= page do %>
 			<%= header :class => "group" do %>
 				<%= link_to root_path do %>
@@ -26,13 +22,7 @@
 					<small>ITA, São José dos Campos/SP</small>
 				</p>
 				<nav id="menu">
-					<%= link_to t("links.home"), root_path, class: "home" %>
-					<%= link_to t("links.register"), new_user_path, class: "register" %>
-					<%= link_to t("links.venue"), venue_path, class: "venue" %>
-					<%= link_to t("links.speakers"), speakers_path, class: "speakers" %>
-					<%= link_to t("links.schedule"), schedule_path, class: "schedule" %>
-					<%= link_to t("links.sponsors"), sponsors_path, class: "sponsors" %>
-					<%= link_to t("links.organization"), organization_path, class: "organization" %>
+					<%= link_to "Sair", class: "logout" %>
 				</nav>
 			<% end %>
 
