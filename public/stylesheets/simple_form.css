@@ -35,7 +35,7 @@
 .simple_form .inputs .error, .simple_form .inputs .hint {
   display: block;
   margin: 5px 0 8px;
-  color: #999;
+  color: red;
   font-size: 75%;
 }
 .simple_form .actions {
