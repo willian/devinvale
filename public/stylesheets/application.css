@@ -272,11 +272,11 @@ footer p a { color:#FFF; }
 	text-align: center;
 }
 
-#attends th{
+#attendees th{
 	background: #666;
 }
 
-#attends td, #attends th{
+#attendees td, #attendees th{
 	font-size: 10px;
 	text-align: left;
 }
