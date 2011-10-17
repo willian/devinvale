@@ -12,6 +12,7 @@ gem "jquery-rails"
 gem "capistrano"
 
 gem "airbrake"
+gem "bluepill"
 gem "delayed_job"
 gem "i18n-js"
 gem "permalink"
