@@ -1,7 +1,7 @@
 class AdminController < ApplicationController
 
   def index
-    @users = User.all
+    @users = User.all(:order => 'id DESC')
   end
 
   def remove_user
