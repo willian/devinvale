@@ -7,11 +7,11 @@
   flash_messages:
     users:
       create:
-        notice: "Sua inscrição foi feita com sucesso!"
+        notice: "Sua inscrição na lista de espera foi feita com sucesso!"
   links:
     home: "Início"
     organization: "Organização"
-    register: "Inscrição"
+    register: "Lista de Espera"
     schedule: "Programação"
     speakers: "Palestrantes"
     sponsors: "Patrocinadores"
@@ -38,7 +38,7 @@
     organization: 
       index: "Organização"
     users:
-      new: "Inscrição"
+      new: "Lista de Espera"
   user_mailer:
     confirmation:
-      subject: "[DevInVale] Confirmação de inscrição"
+      subject: "[DevInVale] Confirmação de inscrição na lista de espera"

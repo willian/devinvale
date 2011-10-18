@@ -6,8 +6,10 @@
 	  <tr>
 	    <th style="width: 150px;">Nome</th>
 	    <th style="width: 150px;">Email</th>
+	    <th>Espera?</th>
 	    <th>Twitter</th>
 	    <th>CPF</th>
+	    <th>Cidade</th>
 	    <th>Empresa</th>
 	    <th>Faculdade</th>
 	    <th>ITA?</th>
@@ -19,8 +21,10 @@
 	  <tr>
 	    <td><%= user.name %></td>
 	    <td><%= user.email %></td>
+	    <td><%= user.waiting_list ? "Sim" : "Não" %></td>
 	    <td><%= user.twitter %></td>
 	    <td><%= user.cpf %></td>
+	    <td><%= user.city_name %></td>
 	    <td><%= user.company %></td>
 	    <td><%= user.college %></td>
 	    <td><%= user.ita_student ? "Sim" : "Não" %></td>
