@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   attr_accessible :name, :email, :twitter, :city_name, :state_name,
-                  :cpf, :company, :college, :foreigner, :ita_student, :ita_badge, :waiting_list
+                  :cpf, :company, :college, :foreigner, :ita_student, :ita_badge, :waiting_list, :canceled
 
   permalink :name, :to_param => :permalink
 

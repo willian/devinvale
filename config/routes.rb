@@ -11,4 +11,5 @@ DevInVale::Application.routes.draw do
   resources :admin, :only => [:index]
   match '/admin/remove-user/:id' => 'admin#remove_user'
   match '/admin/confirm-user/:id' => 'admin#confirm_user'
+  match '/admin/cancel-user/:id' => 'admin#cancel_user'
 end

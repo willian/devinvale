@@ -26,7 +26,15 @@
 	    <td><%= user.city_name %></td>
 	    <td><%= user.company %></td>
 	    <td><%= user.college %></td>
-	    <td><%= link_to "Confirmar", :controller => "admin", :action => "confirm_user", :id => user.id %></td>
+
+			<% if user.waiting_list %>
+	    	<td><%= link_to "Confirmar", :controller => "admin", :action => "confirm_user", :id => user.id %></td>
+			<% else %>
+				<% if !user.canceled %>
+	    	<td><%= link_to "Cancelar", :controller => "admin", :action => "cancel_user", :id => user.id %></td>
+				<% end %>
+			<% end %>
+
 	    <td><%= link_to "Excluir", :controller => "admin", :action => "remove_user", :id => user.id %></td>
 	  </tr>
 	<% end %>

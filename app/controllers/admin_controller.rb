@@ -18,6 +18,14 @@ class AdminController < ApplicationController
     @user = User.find(params[:id])
     @user.waiting_list = false
     @user.save
+    UserMailer.confirmation_waiting_list(@user)
+    redirect_to(admin_index_path)
+  end
+
+  def cancel_user
+    @user = User.find(params[:id])
+    @user.canceled = true
+    @user.save
     redirect_to(admin_index_path)
   end
 
