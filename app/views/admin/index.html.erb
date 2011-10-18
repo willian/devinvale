@@ -12,8 +12,7 @@
 	    <th>Cidade</th>
 	    <th>Empresa</th>
 	    <th>Faculdade</th>
-	    <th>ITA?</th>
-	    <th>Crachá?</th>
+	    <th></th>
 	    <th></th>
 	  </tr>
 
@@ -27,8 +26,7 @@
 	    <td><%= user.city_name %></td>
 	    <td><%= user.company %></td>
 	    <td><%= user.college %></td>
-	    <td><%= user.ita_student ? "Sim" : "Não" %></td>
-	    <td><%= user.ita_badge ? "Sim" : "Não" %></td>
+	    <td><%= link_to "Confirmar", :controller => "admin", :action => "confirm_user", :id => user.id %></td>
 	    <td><%= link_to "Excluir", :controller => "admin", :action => "remove_user", :id => user.id %></td>
 	  </tr>
 	<% end %>

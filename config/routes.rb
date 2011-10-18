@@ -10,4 +10,5 @@ DevInVale::Application.routes.draw do
   # is it possible improve this?
   resources :admin, :only => [:index]
   match '/admin/remove-user/:id' => 'admin#remove_user'
+  match '/admin/confirm-user/:id' => 'admin#confirm_user'
 end

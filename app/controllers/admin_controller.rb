@@ -14,6 +14,13 @@ class AdminController < ApplicationController
     redirect_to(admin_index_path)
   end
 
+  def confirm_user
+    @user = User.find(params[:id])
+    @user.waiting_list = false
+    @user.save
+    redirect_to(admin_index_path)
+  end
+
   protected
 
   def authenticate
