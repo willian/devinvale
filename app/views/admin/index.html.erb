@@ -32,6 +32,8 @@
 			<% else %>
 				<% if !user.canceled %>
 	    	<td><%= link_to "Cancelar", :controller => "admin", :action => "cancel_user", :id => user.id %></td>
+				<% else %>
+				  <td></td>
 				<% end %>
 			<% end %>
 
