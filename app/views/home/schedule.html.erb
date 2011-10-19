@@ -2,7 +2,7 @@
 <div id="schedule">
 	<p>A organização do DevInVale preparou uma seleção de palestras de alto nível para você!</p>
 	<br />
-	<p>Programação sujeita a alteração sem aviso prévio.</p>
+	<p style="color: red;">Programação sujeita a alteração sem aviso prévio.</p>
 	<br />
 
 	<table width="100%" cellspacing="0" bordercolor="#FFFFFF" class="table">
@@ -10,24 +10,24 @@
 			<th style="width: 100px;">Horário</th>
 			<th>Palestra</th>
 		</tr>
-		<tr>
+		<tr class="break">
 			<td>08:30</td>
 			<td>Credenciamento</td>
 		</tr>
-		<tr>
+		<tr class="break">
 			<td>09:00</td>
 			<td>Abertura Oficial do Evento</td>
 		</tr>
 		<tr>
 			<td>09:20</td>
-			<td><%= link_to "Palestra #01 - JRuby & Ruby", "#", :target => "_blank" %>  </td>
+			<td>Palestra #01 - JRuby & Ruby</td>
 		</tr>
 		<tr>
 			<td>10:00</td>
 			<td>Palestra #02 - Interface com o usuário para Desenvolvedores </td>
 		</tr>
 		<tr>
-			<td>10:40</td>
+			<td class="break">10:40</td>
 			<td>Coffee Break </td>
 		</tr>
 		<tr>
@@ -36,9 +36,10 @@
 		</tr>
 		<tr>
 			<td>11:40</td>
-			<td>Palestra #04 - OpenSource </td>
+			<td><%= link_to "Open Source - desenvolvimento sem frescura", "/speakers/#jesus-lopes", :target => "_blank" %>
+			  <br /> <strong> Jésus Lopes - Zigotto </strong></td>
 		</tr>
-		<tr>
+		<tr class="break">
 			<td>12:20</td>
 			<td>Almoço </td>
 		</tr>
@@ -54,13 +55,13 @@
 			<td>14:50</td>
 			<td>Palestra #07 - Android </td>
 		</tr>
-		<tr>
+		<tr class="break">
 			<td>15:30</td>
 			<td>Coffee Break </td>
 		</tr>
 		<tr>
 			<td>15:50</td>
-			<td>Palestra #08 - iOS - Diego Chohfi </td>
+			<td><%= link_to "Objective-C, do básico ao avançado, novidades do iOS5 e features dinâmicas da linguágem", "/speakers/#diego-chohfi", :target => "_blank" %><br /> <strong> Diego Chohfi - Caelum </strong></td>
 		</tr>
 		<tr>
 			<td>16:30</td>
@@ -70,7 +71,7 @@
 			<td>17:10</td>
 			<td>Palestra #10 - Desenvolvimento de Jogos </td>
 		</tr>
-		<tr>
+		<tr class="break">
 			<td>17:50</td>
 			<td>Encerramento e Happy Hour do Evento </td>
 		</tr>

@@ -190,6 +190,26 @@ footer p {
 footer p strong { display:block; }
 footer p a { color:#FFF; }
 
+body.home-index div.speakers{
+	height: 200px;	
+}
+
+body.home-index div.speakers img{
+	padding: 5px;
+	margin: 0  10px 10px 0;
+	border: 1px solid #999;
+	float: left;
+}
+
+body.home-index div.speakers div.box{
+	width: 400px;
+	float: left;
+	padding: 10px;
+	margin: 0 10px 0 0;
+	border: 1px solid #EAEAEA;
+}
+
+
 /*
 	Sponsors Page
 */
@@ -257,6 +277,15 @@ footer p a { color:#FFF; }
 	border-width: 0 0 1px 0;
 	padding: 0 0 10px 0;
 	margin: 0 0 10px 0;
+}
+
+#schedule strong{
+	color: #025964;
+}
+
+#schedule tr.break{
+	background-color: #EAEAEA;
+	color: #0a8bf9;
 }
 
 

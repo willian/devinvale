@@ -7,7 +7,24 @@
 <br />
 
 <h1><%= t("titles.speakers.index") %></h1>
-<p>Em breve os palestrantes do evento.</p>
+
+<div class="speakers">
+  <div class="box">
+    <%= link_to "/speakers/#jesus-lopes" do %>
+  		<%= image_tag "/images/speakers/jesus-lopes.jpg", :title => "Jésus Lopes - Zigotto" %>
+  	<% end %>
+  	<p><strong>Jésus Lopes - Zigotto</strong></p>
+  	<p>Open Source - desenvolvimento sem frescura</p>
+  </div>
+  <div class="box">
+  	<%= link_to "/speakers/#diego-chohfi" do %>
+  		<%= image_tag "/images/speakers/diego-chohfi.jpg", :title => "Diego Chohfi - Caelum" %>
+  	<% end %>
+  	<p><strong>Diego Chohfi - Caelum</strong></p>
+  	<p>Objective-C, do básico ao avançado, novidades do iOS5 e features dinâmicas da linguágem</p>
+  </div>
+</div>
+
 <br />
 
 <%= render :partial => 'sponsors'%>
