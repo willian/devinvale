@@ -280,6 +280,8 @@ body.home-index div.speakers div.box{
 
 #speakers p {
 	margin: 10px 0;
+	text-align:justify;
+	text-justify:inter-word;
 }
 
 
