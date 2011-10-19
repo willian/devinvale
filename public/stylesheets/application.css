@@ -1,6 +1,6 @@
 /* Defaults */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small,  strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-	border:0;	
+	border:0;
 	font-size:100%;
 	margin:0;
 	padding:0;
@@ -191,7 +191,7 @@ footer p strong { display:block; }
 footer p a { color:#FFF; }
 
 body.home-index div.speakers{
-	height: 200px;	
+	height: 200px;
 }
 
 body.home-index div.speakers img{
@@ -230,9 +230,13 @@ body.home-index div.speakers div.box{
 	margin: 0  0 30px 0;
 }
 
+#sponsors a {
+	text-decoration:none;
+}
+
 #sponsors img{
 	border: 1px solid #999;
-} 
+}
 
 /*
 	Organization Page
@@ -241,11 +245,11 @@ body.home-index div.speakers div.box{
 #organization img, #speakers img{
 	padding: 5px;
 	border: 1px solid #999;
-} 
+}
 
 #organization h2{
 	padding: 20px 0;
-} 
+}
 
 #organization div.people{
 	height: 300px;
