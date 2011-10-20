@@ -1,4 +1,10 @@
 <h1>Inscritos (<%= @users.length%>)</h1>
+
+<p>Confirmados: (<%= @users.count{|x| x.waiting_list == false} %>) </p>
+<br />
+<p>Espera:  (<%= @users.count{|x| x.waiting_list == true} %>) </p>
+<br />
+
 <div id="attendees">
 	
 <% if !@users.blank? %>
