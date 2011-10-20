@@ -1,6 +1,33 @@
 <h1><%= t("titles.speakers.index") %></h1>
 
 <div id="speakers">
+	<div class="box group">
+		<a name="shiota"></a>
+		<%= link_to "http://www.twitter.com/shiota", :target => "_blank" do %>
+			<%= image_tag "/images/speakers/eduardo-shiota.jpg", :title => "Eduardo Shiota Yasuda" %>
+		<% end %>
+
+		<h2>User Experience para Developers</strong> <small>- 10:00h</small></h2>
+		<p>
+			Os desenvolvedores estão constantemente tendo novas idéias, e hoje em dia é cada vez mais
+			viável colocá-las em prática. Mas não adianta desenvolver um serviço 100% funcional se sua
+			interface não conseguir se comunicar com o usuário. É necessário solucionar sua necessidade
+			não só por funcionalidade, mas também pela sensação de segurança, pelo conforto, e por satisfação pessoal.
+		</p>
+		<p>
+			Nesta apresentação, serão dadas dicas e estratégias de como parar de desenvolver produtos
+			centrados apenas em máquinas, e começar a desenvolver também centrados no usuário.
+		</p>
+		<p><strong>Eduardo Shiota Yasuda</strong></p>
+		<p>
+			Já estudou Ciência da Computação, é formado em Design Gráfico e trabalha com Front-end Development
+			há 9 anos. Trabalhou como Front-end Developer na WebCo/Abril Digital, e também como Designer e
+			Arquiteto da Informação no SWAT Team (Strategic Worldwide Applications and Technologies) do grupo Naspers/MIH.
+		</p>
+		<p>
+			É evangelista de HTML semânticos, de CSS estruturados, JavaScript bem escritos, e do design centrado no usuário.
+		</p>
+	</div>
 
 	<div class="box group">
 		<a name="jesus-lopes"></a>
@@ -17,6 +44,45 @@
 		<p>
 			Desenvolvedor de software, ex-gordo e sempre nerd. Jésus é co-fundador da Zigotto e desde 2008
 			se dedica ao estudo e desenvolvimento com Ruby e Rails.
+		</p>
+	</div>
+
+	<div class="box group">
+		<a name="lucas-hungaro"></a>
+		<%= link_to "http://www.twitter.com/lucashungaro", :target => "_blank" do %>
+			<%= image_tag "/images/speakers/lucas-hungaro.jpg", :title => "Lucas Húngaro - GoNow" %>
+		<% end %>
+
+		<h2>SOLID através de BDD - um guia prático para Rubistas</strong> <small>- 13:30h</small></h2>
+		<p>
+			Já conhecemos muitos dos benefícios do BDD para design de código. Mas há algo que deveríamos fazer
+			mais: ouvir a voz de nossas suítes de testes.
+		</p>
+		<p>
+			Nessa palestra mostrarei como você pode fazer isso enquanto aprendemos a identificar e resolver os
+			seguintes problemas através do BDD:
+		</p>
+		<ol>
+			<li>Alto acoplamento</li>
+			<li>Baixa coesão</li>
+			<li>Overmocking</li>
+			<li>Domínios anêmicos</li>
+		</ol>
+		<p>
+			Programação Orientada a Objetos mal aplicada (ou: como aplicar SOLID através do BDD)<br>
+			Veremos como todos esses problemas estão interconectados e como resolvê-los e colher benefícios como
+			testes que rodam mais rápido, código flexível e tempo de manutenção reduzido.
+		</p>
+		<p><strong>Lucas Húngaro</strong> - GoNow</p>
+		<p>
+			Desenvolvo software há 10 anos e escrevo código em Ruby desde o início de 2007.
+		</p>
+		<p>
+			Meu foco é minimalismo aplicado ao código e como princípios da Programação Orientada a Objetos podem
+			nos ajudar a criar arquiteturas bonitas e flexíveis.
+		</p>
+		<p>
+			Palestrei sobre Ruby e BDD na RubyConf Brasil 2010, Dev in Sampa 2010 e FISL 2009.
 		</p>
 	</div>
 
@@ -47,6 +113,56 @@
 		<p>
 			Desenvolvedor Java a 4 anos, gosta de aprender novas linguagens e é apaixonado por desenvolvimento
 			em geral. Instrutor e desenvolvedor na Caelum, descobriu em dar aula uma nova paixão.
+		</p>
+	</div>
+
+	<div class="box group">
+		<a name="akita"></a>
+		<%= link_to "http://www.twitter.com/akitaonrails", :target => "_blank" do %>
+			<%= image_tag "/images/speakers/akita.jpg", :title => "Fábio Akita" %>
+		<% end %>
+
+		<h2>Discutindo Arquiteturas e Rails</strong> <small>- 16:30h</small></h2>
+		<p>
+			Muitos desenvolvedores utilizam frameworks web como Ruby on Rails mas não tem idéia do modelo
+			implementado. Por exemplo, com ferramentas como Node.js a conclusão é que Ruby "provavelmente"
+			não serve para "escalar". O que muitos talvez não entendam é que Ruby on Rails é apenas uma de
+			muitas excelentes tecnologias na plataforma Ruby e que existem outras formas de escalar seus
+			projetos - caso realmente precisem. Então esta palestra explicará um pouco de como é o modelo
+			sobre o qual frameworks como o Rails e similares são baseados e alternativas a tecnologias como
+			Node.js para que todos possam tirar o máximo proveito do que Ruby tem a oferecer.
+		</p>
+		<p><strong>Fábio Akita</strong> - Codeminer42</p>
+		<p>
+			Fabio Akita é um conhecido blogueiro e evangelista da comunidade Ruby on Rails e Agile.
+			Recemente co-fundou a boutique de software Codeminer 42 em São Paulo, oferecendo serviços de
+			desenvolvimento nas plataformas Ruby, Mobile e outros. Foi é Gerente de Projetos pela Gonow
+			Tecnologia. Foi Gerente de Projetos na Locaweb, onde também fez parceria na concepção da conferência
+			anual Rails Summit (rebatizada de "RubyConf Brasil"). Já trabalhou como Brazil Rails Practice Manager
+			para a consultoria americana Surgeworks LLC. Por mais de 5 anos foi consultor de integração e
+			desenvolvimento no mundo SAP. Tem mais de 15 anos de experiência nas áreas de desenvolvimento de
+			software e gestão de projetos, dá palestras em faculdades e conferências de tecnologia e gestão.
+		</p>
+	</div>
+
+	<div class="box group">
+		<a name="chester"></a>
+		<%= link_to "http://www.twitter.com/chesterbr", :target => "_blank" do %>
+			<%= image_tag "/images/speakers/chester.jpg", :title => "Chester (Carlos Duarte do Nascimento)" %>
+		<% end %>
+
+		<h2>Programação para Atari 2600</strong> <small>- 17:10h</small></h2>
+		<p>
+			O objetivo da palestra é valorizar o esforço dos programadores que criaram os jogos clássicos do Atari 2600.
+			Será feita uma apresentação básica da arquitetura (em particular das limitações de CPU/memória e do chip TIA)
+			e ao final o palestrante irá montar e rodar (num emulador) um pequeno experimento, demonstrando a complexidade
+			envolvida na criação de um jogo completo.
+		</p>
+		<p><strong>Chester (Carlos Duarte do Nascimento)</strong> - Apontador</p>
+		<p>
+			Chester (Carlos Duarte do Nascimento) é Bacharel em Matemática Aplicada e Computacional pelo IME/USP e trabalha
+			há mais de duas décadas como arquiteto e desenvolvedor de software com diversas linguagens e tecnologias.
+			Defende a prevalência dos mashups e serviços/aplicativos colaborativos no lugar de sites e aplicações “estanque”, tanto em sua função de Gerente de Produto no site Apontador, quanto em projetos pessoais de software e conteúdo livre (que vão desde jogos para celulares até mashups com transporte público), disponíveis em http://chester.me
 		</p>
 	</div>
 </div>

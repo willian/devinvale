@@ -191,7 +191,7 @@ footer p strong { display:block; }
 footer p a { color:#FFF; }
 
 body.home-index div.speakers{
-	height: 200px;
+/*	height: 200px;*/
 }
 
 body.home-index div.speakers img{
@@ -205,7 +205,7 @@ body.home-index div.speakers div.box{
 	width: 400px;
 	float: left;
 	padding: 10px;
-	margin: 0 10px 0 0;
+	margin: 10px 10px 0 0;
 	border: 1px solid #EAEAEA;
 }
 
@@ -292,8 +292,9 @@ body.home-index div.speakers div.box{
 	margin: 0 0 10px 0;
 }
 
-#schedule strong{
+#schedule strong {
 	color: #025964;
+	display:block;
 }
 
 #schedule tr.break{

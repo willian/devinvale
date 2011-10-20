@@ -1,30 +1,63 @@
 <h1><%= t("titles.speakers.devinvale") %></h1>
 <p style="color: red;">Inscrições encerradas, entre em nossa <%= link_to "Lista de Espera", new_user_path %></p>
-<br />
+<br>
 <p>O AgileVale 2011 foi um sucesso absoluto onde mais de 600 pessoas confraternizaram o conhecimento sobre metodologias ágeis e engenharia de software. Durante o evento foi identificado uma grande quantidade de profissionais que desejam um evento focado em desenvolvimento de software, e com isso nasce o DevInVale 2011. Serão 10 palestras com renomados profissionais da indústria trazendo os mais diversos assuntos sobre desenvolvimento.</p>
-<br />
+<br>
 <p>Mais uma vez a comunidade conta com o apoio do ITA e de várias empresas que acreditam no potencial da nossa comunidade.</p>
-<br />
+<br>
 
 <h1><%= t("titles.speakers.index") %></h1>
 
-<div class="speakers">
-  <div class="box">
-    <%= link_to "/speakers/#jesus-lopes" do %>
-  		<%= image_tag "/images/speakers/jesus-lopes.jpg", :title => "Jésus Lopes - Zigotto" %>
-  	<% end %>
-  	<p><strong>Jésus Lopes - Zigotto</strong></p>
-  	<p>Open Source - desenvolvimento sem frescura</p>
-  </div>
-  <div class="box">
-  	<%= link_to "/speakers/#diego-chohfi" do %>
-  		<%= image_tag "/images/speakers/diego-chohfi.jpg", :title => "Diego Chohfi - Caelum" %>
-  	<% end %>
-  	<p><strong>Diego Chohfi - Caelum</strong></p>
-  	<p>Objective-C, do básico ao avançado, novidades do iOS5 e features dinâmicas da linguágem</p>
-  </div>
+<div class="speakers group">
+	<div class="box">
+		<%= link_to "/speakers/#shiota" do %>
+			<%= image_tag "/images/speakers/eduardo-shiota.jpg", :title => "Eduardo Shiota Yasuda" %>
+		<% end %>
+		<p><strong>Eduardo Shiota Yasuda</strong></p>
+		<p>User Experience para Developers</p>
+	</div>
+
+	<div class="box">
+		<%= link_to "/speakers/#jesus-lopes" do %>
+			<%= image_tag "/images/speakers/jesus-lopes.jpg", :title => "Jésus Lopes - Zigotto" %>
+		<% end %>
+		<p><strong>Jésus Lopes - Zigotto</strong></p>
+		<p>Open Source - desenvolvimento sem frescura</p>
+	</div>
+
+	<div class="box">
+		<%= link_to "/speakers/#lucas-hungaro" do %>
+			<%= image_tag "/images/speakers/lucas-hungaro.jpg", :title => "Lucas Húngaro - GoNow" %>
+		<% end %>
+		<p><strong>Lucas Húngaro - GoNow</strong></p>
+		<p>SOLID através de BDD - um guia prático para Rubistas</p>
+	</div>
+
+	<div class="box">
+		<%= link_to "/speakers/#diego-chohfi" do %>
+			<%= image_tag "/images/speakers/diego-chohfi.jpg", :title => "Diego Chohfi - Caelum" %>
+		<% end %>
+		<p><strong>Diego Chohfi - Caelum</strong></p>
+		<p>Objective-C, do básico ao avançado, novidades do iOS5 e features dinâmicas da linguágem</p>
+	</div>
+
+	<div class="box">
+		<%= link_to "/speakers/#akita" do %>
+			<%= image_tag "/images/speakers/akita.jpg", :title => "Fábio Akita - Codeminer42" %>
+		<% end %>
+		<p><strong>Fábio Akita - Codeminer42</strong></p>
+		<p>Discutindo Arquiteturas e Rails</p>
+	</div>
+
+	<div class="box">
+		<%= link_to "/speakers/#chester" do %>
+			<%= image_tag "/images/speakers/chester.jpg", :title => "Chester (Carlos Duarte do Nascimento) - Apontador" %>
+		<% end %>
+		<p><strong>Chester (Carlos Duarte do Nascimento) - Apontador</strong></p>
+		<p>Programação para Atari 2600</p>
+	</div>
 </div>
 
-<br />
+<br>
 
 <%= render :partial => 'sponsors'%>
