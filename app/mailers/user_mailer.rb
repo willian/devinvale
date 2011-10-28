@@ -1,5 +1,4 @@
 class UserMailer < ActionMailer::Base
-
   default from: "contato@devinvale.com.br"
 
   def confirmation(user)
@@ -7,7 +6,7 @@ class UserMailer < ActionMailer::Base
     mail to: user.email
   end
 
-  def waiting_list(user)
+  def confirm_waiting_list(user)
     @user = user
     mail to: user.email
   end

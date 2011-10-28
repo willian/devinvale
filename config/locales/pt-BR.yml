@@ -42,5 +42,5 @@
   user_mailer:
     confirmation:
       subject: "[DevInVale] Confirmação de inscrição na lista de espera"
-    waiting_list:
+    confirm_waiting_list:
       subject: "[DevInVale] Confirmação de inscrição no DevInVale"
