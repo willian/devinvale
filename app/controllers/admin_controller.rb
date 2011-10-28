@@ -17,8 +17,9 @@ class AdminController < ApplicationController
   def confirm_user
     @user = User.find(params[:id])
     @user.waiting_list = false
-    @user.save
-    UserMailer.delay(run_at: 1.minute.from_now).confirmation_waiting_list(@user)
+    if @user.save
+      UserMailer.delay(run_at: 1.minute.from_now).waiting_list(@user)
+    end
     redirect_to(admin_index_path)
   end
 
