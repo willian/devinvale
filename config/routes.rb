@@ -12,4 +12,5 @@ DevInVale::Application.routes.draw do
   match '/admin/remove-user/:id' => 'admin#remove_user'
   match '/admin/confirm-user/:id' => 'admin#confirm_user'
   match '/admin/cancel-user/:id' => 'admin#cancel_user'
+  match '/admin/export-users' => 'admin#export'
 end

@@ -74,6 +74,7 @@ GEM
     erubis (2.7.0)
     factory_girl (2.1.2)
       activesupport
+    fastercsv (1.5.4)
     ffaker (1.8.1)
     ffi (1.0.9)
     fuubar (0.0.6)
@@ -215,6 +216,7 @@ DEPENDENCIES
   capybara
   delayed_job
   factory_girl
+  fastercsv
   ffaker
   fuubar
   guard-rspec

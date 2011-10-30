@@ -4,6 +4,8 @@
 <br />
 <p>Espera:  (<%= @users.count{|x| x.waiting_list == true} %>) </p>
 <br />
+<p> <%= link_to "Exportar Listagem", :controller => "admin", :action => "export", :format => :csv %> </p>
+<br />
 
 <div id="attendees">
 	
