@@ -5,7 +5,7 @@ gem "mysql2"
 gem "jquery-rails"
 
 # Use unicorn as the web server
-# gem "unicorn"
+gem "unicorn"
 
 # Deploy with Capistrano
 gem "capistrano"
