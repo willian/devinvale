@@ -9,6 +9,7 @@ gem "jquery-rails"
 
 # Deploy with Capistrano
 gem "capistrano"
+gem "capistrano_colors"
 
 gem "airbrake"
 gem "bluepill"
