@@ -33,7 +33,7 @@ end
 group :development, :test do
   gem "guard-rspec"
   gem "jasmine"
-  gem "ruby-debug19", require: "ruby-debug"
+  gem "pry"
   gem "rspec-rails"
   gem "spork", "~> 0.9.0.rc"
 end
